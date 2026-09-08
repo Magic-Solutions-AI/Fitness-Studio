@@ -35,7 +35,7 @@ export const FinalCTA: React.FC = () => {
   return (
     <section ref={containerRef} className="relative min-h-[70vh] flex items-center overflow-hidden py-24 lg:py-32">
       {/* Background Image */}
-      <motion.div style={{ y }} className="absolute inset-0 h-[130%] -top-[15%] z-0">
+      <motion.div style={{ y }} className="absolute inset-0 h-[130%] -top-[15%] z-0 will-change-transform transform-gpu">
         <Image
           src="/images/final-cta.jpg"
           alt="Member finishing a heavy lift at AK Fitness Studio"
@@ -50,40 +50,28 @@ export const FinalCTA: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 w-full max-w-[1320px] mx-auto px-6 lg:px-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={containerVariants}
           className="max-w-[640px]"
         >
-          <motion.h2 
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="text-[clamp(42px,6.4vw,86px)] font-extrabold text-[#eeece4] uppercase leading-[0.98] tracking-tight mb-6"
-          >
+          <h2 className="text-[clamp(42px,6.4vw,86px)] font-extrabold text-[#eeece4] uppercase leading-[0.98] tracking-tight mb-6">
             <motion.span variants={wordVariants} className="inline-block mr-[0.25em]">Your</motion.span>
             <motion.span variants={wordVariants} className="inline-block mr-[0.25em]">stronger</motion.span>
             <motion.span variants={wordVariants} className="inline-block">self</motion.span>
             <br />
             <motion.span variants={wordVariants} className="inline-block mr-[0.25em]">starts</motion.span>
             <motion.span variants={wordVariants} className="inline-block">today.</motion.span>
-          </motion.h2>
+          </h2>
           <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            variants={wordVariants}
             className="text-[#eeece4]/68 text-[17px] max-w-[460px] mb-10 leading-relaxed"
           >
             Come see the studio, meet the coaches, and start with a plan built around you — not a template.
           </motion.p>
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.7 }}
+            variants={wordVariants}
             className="flex flex-wrap gap-4"
           >
             <Button href="#contact" variant="solid">

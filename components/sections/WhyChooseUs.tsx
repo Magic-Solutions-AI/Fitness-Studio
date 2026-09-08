@@ -50,7 +50,7 @@ export const WhyChooseUs: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="relative min-h-95 lg:min-h-155 overflow-hidden"
         >
-          <motion.div style={{ y }} className="absolute inset-0 h-[130%] -top-[15%] w-full">
+          <motion.div style={{ y }} className="absolute inset-0 h-[130%] -top-[15%] w-full will-change-transform transform-gpu">
             <Image
               src="/images/why-us.jpg"
               alt="Inside AK Fitness Studio training floor with strength equipment"
