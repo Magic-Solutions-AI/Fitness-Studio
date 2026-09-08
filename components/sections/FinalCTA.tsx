@@ -37,7 +37,7 @@ export const FinalCTA: React.FC = () => {
       {/* Background Image */}
       <motion.div style={{ y }} className="absolute inset-0 h-[130%] -top-[15%] z-0">
         <Image
-          src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1600&auto=format&fit=crop"
+          src="/images/final-cta.jpg"
           alt="Member finishing a heavy lift at AK Fitness Studio"
           title="Heavy Lifting Training at AK Fitness Studio"
           fill

@@ -15,8 +15,7 @@ const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About Us" },
   { href: "#programs", label: "Programs" },
-  { href: "#facilities", label: "Facilities" },
-  { href: "#trainers", label: "Trainers" },
+  { href: "#why-us", label: "Why Choose Us" },
   { href: "#gallery", label: "Gallery" },
   { href: "#contact", label: "Contact", highlight: true },
 ];

@@ -54,10 +54,10 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2.5">
               {[
+                { href: "#home", label: "Home" },
                 { href: "#about", label: "About Us" },
                 { href: "#programs", label: "Programs" },
-                { href: "#trainers", label: "Trainers" },
-                { href: "#facilities", label: "Facilities" },
+                { href: "#why-us", label: "Why Choose Us" },
               ].map((item) => (
                 <li key={item.href}>
                   <Link

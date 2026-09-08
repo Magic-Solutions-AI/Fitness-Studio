@@ -52,7 +52,7 @@ export const WhyChooseUs: React.FC = () => {
         >
           <motion.div style={{ y }} className="absolute inset-0 h-[130%] -top-[15%] w-full">
             <Image
-              src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1200&auto=format&fit=crop"
+              src="/images/why-us.jpg"
               alt="Inside AK Fitness Studio training floor with strength equipment"
               title="AK Fitness Studio Training Floor"
               fill

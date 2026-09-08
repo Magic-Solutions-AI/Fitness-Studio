@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200&auto=format&fit=crop",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "AK Fitness Studio - Premium Fitness & Gym Training in Coimbatore",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     images: [
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200&auto=format&fit=crop",
+      "/images/og-image.jpg",
     ],
   },
   robots: {
